@@ -18,7 +18,7 @@ export const initializeSocket = () => {
   if (ioInstance) return ioInstance; // Prevent double initialization
 
   ioInstance = new Server(server, {
-    cors: { origin: ["http://localhost:5177"], methods: ["GET", "POST"] },
+    cors: { origin: ["http://localhost:5173"], methods: ["GET", "POST"] },
   });
 
   ioInstance.on("connection", (socket) => {
